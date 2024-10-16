@@ -1,0 +1,122 @@
+/* ベーシックリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 撮影方法セクションのスタイル */
+#photography {
+    margin: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* 条件のスタイル */
+.condition {
+    margin-bottom: 40px;
+}
+
+.condition h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.condition p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 良い例と悪い例を並べて表示 */
+.examples {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.example {
+    text-align: center;
+    width: 200px;
+}
+
+.example h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.example img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* 良い例は緑色、悪い例は赤色 */
+.example.good h4 {
+    color: green;
+}
+
+.example.bad h4 {
+    color: red;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
