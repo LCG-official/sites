@@ -48,6 +48,7 @@ nav ul li a:hover {
 /* セクションのスタイル */
 section {
     margin: 40px 0;
+    text-align: center;
 }
 
 h2 {
