@@ -118,6 +118,19 @@ h2 {
     background-color: #ececec;
 }
 
+
+/* フィルタ */
+#filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#filter select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+
 /* フッター */
 footer {
     text-align: center;
