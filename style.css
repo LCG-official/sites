@@ -30,20 +30,28 @@ nav ul {
     padding: 0;
 }
 
+
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #555;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
+    color: #777;  /* ホバー時のリンク色 */
     text-decoration: underline;
 }
+
+nav ul li a:active {
+    color: #333;  /* クリック時（アクティブ時）のリンク色 */
+}
+
 
 /* セクションのスタイル */
 section {
