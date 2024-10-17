@@ -14,6 +14,20 @@ body {
     padding: 20px;
 }
 
+body a {
+    color: #555; /* 標準のリンク色 */
+    text-decoration: none; /* 下線をデフォルトで外す */
+    border-bottom: 1px solid #555; /* 下線の代わりにボーダーで下線効果 */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* 色と下線の変化をスムーズに */
+}
+
+body a:hover {
+    color: #333; /* ホバー時に少し濃い色に変更 */
+    border-bottom-color: #333; /* 下線の色もホバー時に変える */
+    text-decoration: none; /* 下線ではなくボーダーでホバーエフェクト */
+}
+
+
 header {
     background-color: #333;
     color: #fff;
@@ -36,19 +50,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #555;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #777;  /* ホバー時のリンク色 */
     text-decoration: underline;
 }
 
-nav ul li a:active {
-    color: #333;  /* クリック時（アクティブ時）のリンク色 */
-}
 
 /* 撮影方法セクションのスタイル */
 #photography {
