@@ -22,6 +22,16 @@
         </nav>
     </header>
 
+    <section id="filter">
+        <h2>フィルタリング条件を選択</h2>
+        <label for="filter-select">サーバーでフィルタ:</label>
+        <select id="filter-select" onchange="filterCards()">
+            <option value="all">すべて表示</option>
+            <option value="鞠">鞠</option>
+            <option value="樽">樽</option>
+        </select>
+    </section>
+    
     <!-- カードパックセクション -->
     <section id="packs">
         <h2>各パックの収録カード</h2>
@@ -178,9 +188,30 @@
     </section>
 
     <!-- フッター -->
+
     <footer>
         <p>&copy; 2024 LCG. All rights reserved.</p>
     </footer>
 
+<!-- JavaScript -->
+    <script>
+        // フィルタ機能の実装
+        function filterCards() {
+            const filter = document.getElementById("filter-select").value; // 選択されたフィルタの値を取得
+            const cards = document.querySelectorAll("#card-list li"); // すべてのリストアイテムを取得
+
+            cards.forEach(card => {
+                if (filter === "all") {
+                    card.style.display = "list-item"; // "すべて表示"なら全て表示
+                } else if (card.classList.contains(filter)) {
+                    card.style.display = "list-item"; // フィルタ条件に合うカードだけ表示
+                } else {
+                    card.style.display = "none"; // フィルタ条件に合わないカードは非表示
+                }
+            });
+        }
+    </script>
+
+    
 </body>
 </html>
