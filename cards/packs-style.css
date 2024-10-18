@@ -71,7 +71,6 @@ h2 {
     font-size: 24px;
 }
 
-/* 各パックのスタイル */
 .pack {
     margin-bottom: 40px;
     background-color: #fff;
@@ -81,22 +80,12 @@ h2 {
     text-align: center;
 }
 
-/* スマートフォンやタッチデバイス向けにボタンを大きくするスタイル */
 .pack summary {
-    font-size: 18px; /* フォントサイズを大きく */
+    font-size: 20px;
     color: #333;
     cursor: pointer;
     margin-bottom: 15px;
-    padding: 15px; /* クリックできるエリアを広げる */
-    background-color: #f0f0f0; /* ボタン風に見せるため背景色を追加 */
-    border-radius: 8px; /* 角を少し丸めてボタン風に */
-    border: 1px solid #ddd; /* 枠線を追加してボタンの視覚的な明確さを強調 */
-    display: inline-block; /* 幅を調整するためにインラインブロック要素に */
-    width: 100%; /* 幅を全体に広げて、スマホ画面でクリックしやすくする */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* 少し影をつけてボタンを目立たせる */
-    transition: background-color 0.3s ease; /* ホバー時の背景色変化を滑らかに */
 }
-
 
 .pack img {
     width: 300px;
