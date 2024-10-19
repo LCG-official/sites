@@ -87,12 +87,12 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* カードパックの画像が画面幅に応じて調整されるように */
 .pack img {
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 2px solid #ddd;
+    max-width: 100%; /* 画像の最大幅を100%にすることで親要素の幅に収まる */
+    height: auto;    /* 高さを自動調整して縦横比を維持 */
+    display: block;  /* 画像をブロック要素にして、余白を防ぐ */
+    margin: 0 auto;  /* 中央揃えにする */
 }
 
 /* カード名リストのスタイル */
